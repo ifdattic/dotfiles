@@ -64,6 +64,9 @@ brew install homebrew/php/composer
 
 postUpdatePHP
 
+# Install development tools
+brew install awscli
+
 # Install other useful binaries.
 brew install ack
 
