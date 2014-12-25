@@ -66,6 +66,7 @@ postUpdatePHP
 
 # Install development tools
 brew install awscli
+brew install ansible
 
 # Install other useful binaries.
 brew install ack
