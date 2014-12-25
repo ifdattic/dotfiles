@@ -7,3 +7,6 @@ sudo -v
 
 # Install pip package manager
 sudo easy_install pip
+
+# Install EB CLI
+sudo pip install awsebcli
