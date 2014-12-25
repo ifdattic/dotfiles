@@ -176,6 +176,10 @@
     name = Andrew (Andrius) Marcinkevicius
     email = andrew.web@ifdattic.com
 
+[credential]
+
+    helper = osxkeychain
+
 # URL shorthands
 
 [url "git@github.com:"]
