@@ -1,1 +1,0 @@
-export AWS_CONFIG_FILE="~/machine-files/aws-cli-config.ini"
