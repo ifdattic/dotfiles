@@ -76,3 +76,6 @@ alias reload="exec $SHELL -l"
 
 # Edit hosts file
 alias hosts='sudo $EDITOR /etc/hosts'
+
+# Symfony console alias (http://www.slideshare.net/javier.eguiluz/symfony-tips-and-tricks)
+alias sf="php app/console"
