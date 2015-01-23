@@ -824,9 +824,6 @@ defaults write com.fournova.Tower2 GTUserDefaultsGitBinary -string "/usr/local/b
 # Start on login
 defaults write com.kapeli.dash shouldStartAtLogin -bool true
 
-# Don't show icon in doc
-defaults write com.kapeli.dash showInDock -bool false
-
 ###############################################################################
 # Speed-Up.app                                                                #
 ###############################################################################
