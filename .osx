@@ -805,19 +805,6 @@ defaults write com.evernote.Evernote runHelperWithoutMainAppPreserved -bool fals
 defaults write com.evernote.Evernote showsStatusBarItem -bool false
 
 ###############################################################################
-# Tower2.app                                                                  #
-###############################################################################
-
-# Date format for commits
-defaults write com.fournova.Tower2 GTUserDefaultsDateFormat -string "GTUserDefaultsDateFormatRelative"
-
-# Terminal application
-defaults write com.fournova.Tower2 GTUserDefaultsDefaultTerminalApplication -string "com.googlecode.iterm2"
-
-# Git binary
-defaults write com.fournova.Tower2 GTUserDefaultsGitBinary -string "/usr/local/bin/git"
-
-###############################################################################
 # Dash.app                                                                    #
 ###############################################################################
 

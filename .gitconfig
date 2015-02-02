@@ -73,10 +73,6 @@
     # Open repository in Source Tree
     sourcetree = !open -a SourceTree .
 
-    # Open repository in Tower
-    tower = !open -a Tower .
-    t = !open -a Tower .
-
     # Merge with no fast forward
     mnff = merge --no-ff
 
