@@ -835,6 +835,22 @@ defaults write de.wetfish.Speed-Up Speed -float 1.2
 defaults write de.wetfish.Speed-Up SpeedPresets -array 0.5 0.75 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7 2
 
 ###############################################################################
+# SourceTree.app                                                              #
+###############################################################################
+
+# Keep bookmarks closed on start up
+defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool true
+
+# Projects folder
+defaults write com.torusknot.SourceTreeNotMAS defaultFolder -string "/Users/ifdattic/projects"
+
+# Change terminal app
+defaults write com.torusknot.SourceTreeNotMAS terminalApp -int 2
+
+# Don't allow to modify global config files
+defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool false
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
