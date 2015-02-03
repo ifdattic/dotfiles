@@ -838,6 +838,13 @@ defaults write com.torusknot.SourceTreeNotMAS terminalApp -int 2
 defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool false
 
 ###############################################################################
+# Kindle.app                                                                  #
+###############################################################################
+
+# Change Content Folder
+defaults write com.amazon.Kindle "User Settings.CONTENT_PATH" -string "/Users/ifdattic/Kindle"
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
