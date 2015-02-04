@@ -805,13 +805,6 @@ defaults write com.evernote.Evernote runHelperWithoutMainAppPreserved -bool fals
 defaults write com.evernote.Evernote showsStatusBarItem -bool false
 
 ###############################################################################
-# Dash.app                                                                    #
-###############################################################################
-
-# Start on login
-defaults write com.kapeli.dash shouldStartAtLogin -bool true
-
-###############################################################################
 # Speed-Up.app                                                                #
 ###############################################################################
 
