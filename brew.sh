@@ -70,6 +70,7 @@ brew install ansible
 
 # Install other useful binaries.
 brew install ack
+brew install httpie
 
 brew install git
 brew install tree
