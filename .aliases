@@ -79,3 +79,6 @@ alias hosts='sudo $EDITOR /etc/hosts'
 
 # Symfony console alias (http://www.slideshare.net/javier.eguiluz/symfony-tips-and-tricks)
 alias sf="php app/console"
+
+# Remove all docker containers
+alias removedockercontainers="docker ps -a | awk '{print $1}' | xargs docker rm"
