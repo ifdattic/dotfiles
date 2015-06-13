@@ -75,6 +75,7 @@ brew install httpie
 brew install git
 brew install tree
 brew install webkit2png
+brew install ngrok
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
