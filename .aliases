@@ -82,3 +82,6 @@ alias sf="php app/console"
 
 # Remove all docker containers
 alias removedockercontainers="docker ps -a | awk '{print $1}' | xargs docker rm"
+
+# Having fun
+alias creepy='say -v "Whisper" "I am watching you"'
