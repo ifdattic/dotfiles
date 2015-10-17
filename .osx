@@ -835,8 +835,9 @@ defaults write com.amazon.Kindle "User Settings.CONTENT_PATH" -string "/Users/if
 ###############################################################################
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-    "Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
-    "Terminal" "Transmission" "Twitter" "iCal"; do
-    killall "${app}" > /dev/null 2>&1
+    "Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
+    "Opera" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
+    "Transmission" "Twitter" "iCal"; do
+    killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
