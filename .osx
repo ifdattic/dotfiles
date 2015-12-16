@@ -652,6 +652,13 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 defaults write com.apple.appstore ShowDebugMenu -bool true
 
 ###############################################################################
+# Photos                                                                      #
+###############################################################################
+
+# Prevent Photos from opening automatically when devices are plugged in
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+###############################################################################
 # Messages                                                                    #
 ###############################################################################
 
@@ -841,7 +848,7 @@ defaults write com.amazon.Kindle "User Settings.CONTENT_PATH" -string "/Users/if
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
-    "Opera" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
+    "Opera" "Photos" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
     "Transmission" "Twitter" "iCal"; do
     killall "${app}" &> /dev/null
 done
