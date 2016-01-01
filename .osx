@@ -737,6 +737,11 @@ defaults write com.most-advantageous.optimal-layout windowPositions -array \
     '{RectString = "10,10,80,80"; displayButtonInMenuBar = 1; displayButtonInOL = 1; isGlobalShortcut = 1; keyboardShortcut = {keyCode = 23; modifiers = 256;}; name = "Custom Layout";}' \
     '{RectString = "0,0,100,50"; displayButtonInMenuBar = 1; displayButtonInOL = 1; isGlobalShortcut = 1; keyboardShortcut = {keyCode = 19; modifiers = 768;}; name = "Custom Layout";}'
 
+# Change Shortcut keys
+defaults write com.most-advantageous.optimal-layout activateSelfFind -dict keyCode 48 modifiers 2048
+defaults write com.most-advantageous.optimal-layout activateSelfForward -dict keyCode -1 modifiers 0
+defaults write com.most-advantageous.optimal-layout activateSelfReverse -dict keyCode -1 modifiers 0
+
 ###############################################################################
 # iTerm.app                                                                   #
 ###############################################################################
