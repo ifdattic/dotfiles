@@ -84,6 +84,7 @@ brew install node
 
 # Install cask applications
 brew cask install licecap
+brew cask install selfcontrol
 
 # Remove outdated versions from the cellar.
 brew cleanup
