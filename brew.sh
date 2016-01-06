@@ -82,5 +82,8 @@ brew install webkit2png
 # installation method.
 brew install node
 
+# Install cask applications
+brew cask install licecap
+
 # Remove outdated versions from the cellar.
 brew cleanup
