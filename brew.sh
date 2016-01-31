@@ -78,6 +78,8 @@ brew install git
 brew install tree
 brew install webkit2png
 
+brew install autojump
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
