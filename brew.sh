@@ -73,17 +73,12 @@ brew install node
 
 # Install other useful binaries.
 brew install ack
-brew install httpie
-
+brew install autojump
 brew install git
+brew install httpie
 brew install tree
 brew install webkit2png
 
-brew install autojump
-
-# Install Node.js. Note: this installs `npm` too, using the recommended
-# installation method.
-brew install node
 
 # Install cask applications
 brew cask install android-file-transfer
