@@ -85,6 +85,7 @@ brew install autojump
 brew install node
 
 # Install cask applications
+brew cask install android-file-transfer
 brew cask install licecap
 brew cask install selfcontrol
 
