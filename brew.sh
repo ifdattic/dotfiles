@@ -88,6 +88,7 @@ brew install node
 brew cask install android-file-transfer
 brew cask install licecap
 brew cask install selfcontrol
+brew cask install virtualbox
 
 # Remove outdated versions from the cellar.
 brew cleanup
