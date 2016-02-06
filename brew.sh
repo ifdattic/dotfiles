@@ -82,6 +82,7 @@ brew install webkit2png
 
 # Install cask applications
 brew cask install android-file-transfer
+brew cask install bartender
 brew cask install licecap
 brew cask install selfcontrol
 brew cask install virtualbox
