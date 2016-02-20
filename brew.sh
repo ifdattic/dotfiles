@@ -85,6 +85,7 @@ brew cask install android-file-transfer
 brew cask install bartender
 brew cask install licecap
 brew cask install selfcontrol
+brew cask install vagrant
 brew cask install virtualbox
 
 # Remove outdated versions from the cellar.
