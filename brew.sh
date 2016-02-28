@@ -69,6 +69,7 @@ postUpdatePHP
 brew install awscli
 brew install ansible
 brew install heroku-toolbelt
+brew install git-extras
 brew install node
 
 # Install other useful binaries.
