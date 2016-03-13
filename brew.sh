@@ -88,6 +88,7 @@ brew cask install licecap
 brew cask install selfcontrol
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install ynab
 
 # Remove outdated versions from the cellar.
 brew cleanup
