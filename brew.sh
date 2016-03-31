@@ -77,6 +77,7 @@ brew install ack
 brew install autojump
 brew install git
 brew install httpie
+brew install ncdu # for calculating disk usage
 brew install tree
 brew install webkit2png
 
