@@ -41,6 +41,7 @@ Desktop.ini
 # Editors #
 ###########
 .idea
+_ide_helper.php
 nbproject
 .buildpath
 .project
@@ -56,3 +57,4 @@ nbproject
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 /node_modules
+.vagrant
