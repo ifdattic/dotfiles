@@ -88,6 +88,7 @@ brew cask install bartender
 brew cask install licecap
 brew cask install phpstorm
 brew cask install selfcontrol
+brew cask install sequel-pro
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install ynab
