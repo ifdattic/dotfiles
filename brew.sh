@@ -81,6 +81,7 @@ brew install git
 brew install httpie
 brew install ncdu # for calculating disk usage
 brew install tree
+brew install vbindiff
 brew install webkit2png
 
 
