@@ -337,6 +337,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
     OpenWith -bool true \
     Privileges -bool true
 
+# Increase the mouse speed for when using keyboard (some big number, max is 32)
+defaults write com.apple.universalaccess mouseDriverMaxSpeed -int 244
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
