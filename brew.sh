@@ -71,6 +71,7 @@ brew install ansible
 brew install heroku-toolbelt
 brew install git-extras
 brew install node
+brew install s3cmd
 
 # Install other useful binaries.
 brew install ack
