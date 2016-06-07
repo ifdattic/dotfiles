@@ -8,5 +8,3 @@ sudo -v
 # Install pip package manager
 sudo easy_install pip
 
-# Install Docker Compose
-sudo pip install -U docker-compose
