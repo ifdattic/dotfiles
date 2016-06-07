@@ -4,6 +4,7 @@
 
 function updatePHP() {
     sed -i -r 's/;?date.timezone.*/date.timezone = UTC/' /usr/local/etc/php/5.6/php.ini
+    sed -i -r 's/;?memory_limit.*/memory_limit = 2G/' /usr/local/etc/php/5.6/php.ini
     sed -i -r 's/;?phar.readonly.*/phar.readonly = Off/' /usr/local/etc/php/5.6/php.ini
 }
 
