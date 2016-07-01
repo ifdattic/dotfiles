@@ -3,7 +3,7 @@
 **Important!!!** This is highly opinionated and set up for personal use. If you're going to use it for yourself please make sure to update the following files with your own references (or search for **ifdattic** in whole project):
 
 * `.gitconfig` (**mandatory**, change user info)
-* `.osx` (**mandatory**, change name info)
+* `.macos` (**mandatory**, change name info)
 * `LICENSE-MIT.txt`
 * `README.md`
 
@@ -61,7 +61,7 @@ If `~/.extra` exists, it will be sourced along with the other files. You can use
 When setting up a new Mac, you may want to set some sensible OS X defaults:
 
 ```bash
-./.osx
+./.macos
 ```
 
 ### Install Homebrew formulae
