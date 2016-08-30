@@ -78,6 +78,7 @@ brew install s3cmd
 brew install ack
 brew install autojump
 brew install git
+brew install git-lfs
 brew install httpie
 brew install ncdu # for calculating disk usage
 brew install tree
