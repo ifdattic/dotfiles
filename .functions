@@ -117,3 +117,34 @@ function tre() {
 function copy() {
     $@ | pbcopy
 }
+
+# Zip modified files in git repository
+# WARNING: it expects the git alias `mod` to be something like:
+# `git ls-files --modified --others --exclude-standard`
+# WARNING: Keep in mind that it won't zip the staged files.
+# Usage:
+#   zipgitchanges # for generating zip
+#   zipgitchanges e # for generating encrypted zip
+#   zipgitchanges eb # for generating encrypted zip and copy it to location
+function zipgitchanges() {
+    filename="$(printf '%s---%s' "${PWD##*/}" "$(date +"%Y-%m-%d--%H-%M-%S")").zip"
+
+    # check if zip has to be encrypted
+    encrypt=;
+
+    if [[ $1 == *e* ]]; then
+        encrypt='--encrypt';
+    fi;
+
+    # zip files
+    zip $encrypt $filename $(git mod)
+
+    # copy/backup to different location
+    if [[ $1 == *b* ]]; then
+        backupLocation="/Users/ifdattic/Google Drive/gitbackups"
+
+        mv $filename "$backupLocation"
+
+        printf "\n\nGit changes backed up to $green$backupLocation$reset as $green$filename\n"
+    fi;
+}

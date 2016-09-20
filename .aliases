@@ -95,3 +95,6 @@ alias removedockercontainers="docker ps -a | awk '{print $1}' | xargs docker rm"
 # Having fun
 alias creepy='say -v "Whisper" "I am watching you"'
 alias airport='while :; do say "I don''t belong to you"; done'
+
+# Zip git changes
+alias zgc="zipgitchanges eb"
