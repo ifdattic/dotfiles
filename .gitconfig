@@ -107,6 +107,9 @@
     # Commit with message
     cm = commit -m
 
+    # Display all modifications
+    mod = ls-files --modified --others --exclude-standard
+
 [apply]
 
     # Detect whitespace errors when applying a patch
