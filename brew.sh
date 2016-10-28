@@ -89,6 +89,7 @@ brew install webkit2png
 # Install cask applications
 brew cask install android-file-transfer
 brew cask install bartender
+brew cask install cyberduck
 brew cask install mou
 brew cask install phpstorm
 brew cask install selfcontrol
