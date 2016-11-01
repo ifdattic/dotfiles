@@ -127,7 +127,7 @@ function copy() {
 #   zipgitchanges e # for generating encrypted zip
 #   zipgitchanges eb # for generating encrypted zip and copy it to location
 function zipgitchanges() {
-    filename="$(printf '%s---%s' "${PWD##*/}" "$(date +"%Y-%m-%d--%H-%M-%S")").zip"
+    filename="$(printf '%s---%s' "${PWD##*/}" "$(date +"%Y-%m-%d--%H-%M-%S")").zip";
 
     # check if zip has to be encrypted
     encrypt=;
@@ -137,14 +137,20 @@ function zipgitchanges() {
     fi;
 
     # zip files
-    zip $encrypt $filename $(git mod)
+    zip $encrypt $filename $(git mod);
 
     # copy/backup to different location
     if [[ $1 == *b* ]]; then
-        backupLocation="/Users/ifdattic/Google Drive/gitbackups"
+        if [ ! -f $filename ]; then
+            printf "\n\nCan not backup, file $red$filename$reset not found!\n";
 
-        mv $filename "$backupLocation"
+            return;
+        fi;
 
-        printf "\n\nGit changes backed up to $green$backupLocation$reset as $green$filename\n"
+        backupLocation="/Users/ifdattic/Google Drive/gitbackups";
+
+        mv $filename "$backupLocation";
+
+        printf "\n\nGit changes backed up to $green$backupLocation$reset as $green$filename\n";
     fi;
 }
