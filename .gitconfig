@@ -110,6 +110,20 @@
     # Display all modifications
     mod = ls-files --modified --others --exclude-standard
 
+    # Safe forced push
+    please = push --force-with-lease
+
+    # Add staged files to last commit
+    commend = commit --amend --no-edit
+
+    # Initialize git repository with initial commit
+    it = "!git init && git commit -m 'root' --allow-empty"
+
+    # Stash untracked and tracked files
+    staash = stash save --include-untracked
+    # Stash ignored, untracked, and tracked files
+    staaash = stash save --all
+
 [apply]
 
     # Detect whitespace errors when applying a patch
