@@ -165,7 +165,7 @@ function crypten() {
         exit;
     fi
 
-    openssl des3 -salt -in "$FILENAME" -out "$FILENAME_ENCRYPTED" && rm $FILENAME
+    openssl des3 -salt -in "$FILENAME" -out "$FILENAME_ENCRYPTED" && rm "$FILENAME"
 }
 
 function cryptde() {
@@ -178,5 +178,5 @@ function cryptde() {
         exit;
     fi
 
-    openssl des3 -d -salt -in "$FILENAME_ENCRYPTED" -out "$FILENAME" && rm $FILENAME_ENCRYPTED
+    openssl des3 -d -salt -in "$FILENAME_ENCRYPTED" -out "$FILENAME" && rm "$FILENAME_ENCRYPTED"
 }
