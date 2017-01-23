@@ -98,6 +98,9 @@ alias sf="php app/console"
 # Remove all exited docker containers
 alias removeexiteddockercontainers="docker ps -a | grep 'Exited' | awk '{print $1}' | xargs docker rm"
 
+# Remove all untagged docker images
+alias removeuntaggeddockerimages="docker images -q --filter 'dangling=true' | xargs docker rmi"
+
 # Having fun
 alias creepy='say -v "Whisper" "I am watching you"'
 alias airport='while :; do say "I don''t belong to you"; done'
