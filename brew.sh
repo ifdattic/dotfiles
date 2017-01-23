@@ -3,13 +3,13 @@
 # Install command-line tools using Homebrew.
 
 function updatePHP() {
-    sed -i -r 's/;?date.timezone.*/date.timezone = UTC/' /usr/local/etc/php/5.6/php.ini
-    sed -i -r 's/;?memory_limit.*/memory_limit = 2G/' /usr/local/etc/php/5.6/php.ini
-    sed -i -r 's/;?phar.readonly.*/phar.readonly = Off/' /usr/local/etc/php/5.6/php.ini
+    sed -i -r 's/;?date.timezone.*/date.timezone = UTC/' /usr/local/etc/php/7.1/php.ini
+    sed -i -r 's/;?memory_limit.*/memory_limit = 2G/' /usr/local/etc/php/7.1/php.ini
+    sed -i -r 's/;?phar.readonly.*/phar.readonly = Off/' /usr/local/etc/php/7.1/php.ini
 }
 
 function postUpdatePHP() {
-    sed -i -r 's/;?phar.readonly = Off/phar.readonly = On/' /usr/local/etc/php/5.6/php.ini
+    sed -i -r 's/;?phar.readonly = Off/phar.readonly = On/' /usr/local/etc/php/7.1/php.ini
 }
 
 # Make sure we’re using the latest Homebrew.
@@ -53,7 +53,7 @@ brew install homebrew/dupes/screen
 
 # Update PHP
 brew tap homebrew/dupes
-brew install homebrew/php/php56
+brew install homebrew/php/php71
 
 updatePHP
 
@@ -61,7 +61,6 @@ brew install homebrew/php/php-cs-fixer
 brew install homebrew/php/php-code-sniffer
 brew install homebrew/php/phpmd
 brew install homebrew/php/composer
-brew install homebrew/php/php56-mongo
 
 postUpdatePHP
 
