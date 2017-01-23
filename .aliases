@@ -95,8 +95,8 @@ alias hosts='sudo $EDITOR /etc/hosts'
 # Symfony console alias (http://www.slideshare.net/javier.eguiluz/symfony-tips-and-tricks)
 alias sf="php app/console"
 
-# Remove all docker containers
-alias removedockercontainers="docker ps -a | awk '{print $1}' | xargs docker rm"
+# Remove all exited docker containers
+alias removeexiteddockercontainers="docker ps -a | grep 'Exited' | awk '{print $1}' | xargs docker rm"
 
 # Having fun
 alias creepy='say -v "Whisper" "I am watching you"'
