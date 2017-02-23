@@ -93,7 +93,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias hosts='sudo $EDITOR /etc/hosts'
 
 # Symfony console alias (http://www.slideshare.net/javier.eguiluz/symfony-tips-and-tricks)
-alias sf="php app/console"
+alias sf="php bin/console"
 
 # Remove all exited docker containers
 alias removeexiteddockercontainers="docker ps -a | grep 'Exited' | awk '{print $1}' | xargs docker rm"
