@@ -107,3 +107,6 @@ alias airport='while :; do say "I don''t belong to you"; done'
 
 # Zip git changes
 alias zgc="zipgitchanges eb"
+
+# Vagrant aliases
+alias vsh="vagrant ssh"
