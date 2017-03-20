@@ -88,6 +88,7 @@ brew install webkit2png
 brew cask install android-file-transfer
 brew cask install bartender
 brew cask install cyberduck
+brew cask install insomnia
 brew cask install mou
 brew cask install phpstorm
 brew cask install selfcontrol
