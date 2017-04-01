@@ -219,7 +219,6 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
-# Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Enable HiDPI display modes (requires restart)
@@ -865,20 +864,6 @@ defaults write org.niltsh.MPlayerX NoDispSub -bool true
 
 # Start playback in fullscreen
 defaults write org.niltsh.MPlayerX StartByFullScreen -bool true
-
-###############################################################################
-# Evernote.app                                                                #
-###############################################################################
-
-# Show notes count in sidebar
-defaults write com.evernote.Evernote ENLeftNavShowsNoteCounts -bool true
-
-# Don't run helper without main app
-defaults write com.evernote.Evernote runHelperWithoutMainApp -bool false
-defaults write com.evernote.Evernote runHelperWithoutMainAppPreserved -bool false
-
-# Don't show menu item
-defaults write com.evernote.Evernote showsStatusBarItem -bool false
 
 ###############################################################################
 # Speed-Up.app                                                                #
