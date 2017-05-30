@@ -1,5 +1,7 @@
 export PATH=./bin:./vendor/bin:$PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+# Bad performance when using a command, hard code the directory
+# export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
