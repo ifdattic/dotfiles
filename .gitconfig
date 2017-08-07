@@ -116,6 +116,9 @@
     # Safe forced push
     please = push --force-with-lease
 
+    # push a new local branch to remote
+    pu = push -u origin HEAD
+
     # Add staged files to last commit
     commend = commit --amend --no-edit
 
