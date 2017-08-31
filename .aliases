@@ -110,3 +110,6 @@ alias zgc="zipgitchanges eb"
 
 # Vagrant aliases
 alias vsh="vagrant ssh"
+
+# Spending bucket
+alias sp="docker start spending-bucket-mysql && ~/projects/spending-bucket/bin/console server:run --env=prod 127.0.0.1:8921"
