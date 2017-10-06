@@ -48,8 +48,8 @@ brew install wget --with-iri
 
 # Install more recent versions of some OS X tools.
 brew install vim --with-override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/screen
+brew install grep
+brew install screen
 
 # Update PHP
 brew tap homebrew/dupes
@@ -82,8 +82,6 @@ brew install httpie
 brew install ncdu # for calculating disk usage
 brew install tree
 brew install vbindiff
-brew install webkit2png
-
 
 # Install cask applications
 brew cask install android-file-transfer
