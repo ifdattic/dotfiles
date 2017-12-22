@@ -58,4 +58,6 @@ function delayed {
 
     # Add autojump (j)
     [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+    . "/usr/local/opt/nvm/nvm.sh"
 }

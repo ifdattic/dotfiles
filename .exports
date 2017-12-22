@@ -32,3 +32,6 @@ export MANPAGER='less -X';
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
+
+# NVM directory to avoid upgrade/reinstall issues
+export NVM_DIR="$HOME/.nvm"
