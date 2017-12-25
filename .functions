@@ -155,6 +155,13 @@ function zipgitchanges() {
     fi;
 }
 
+# Zip current folder and encrypt it
+function zipthis() {
+    filename="${PWD##*/}.zip";
+
+    zip -er "$filename" .
+}
+
 function crypten() {
     FILENAME=$1
     FILENAME_ENCRYPTED="$1.des3"
