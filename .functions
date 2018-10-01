@@ -75,25 +75,16 @@ function dataurl() {
     echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
 }
 
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
-# opens the given location
-function s() {
-    if [ $# -eq 0 ]; then
-        subl .;
+# Normalize `open` across Linux, macOS, and Windows.
+# This is needed to make the `o` function (see below) cross-platform.
+if [ ! $(uname -s) = 'Darwin' ]; then
+    if grep -q Microsoft /proc/version; then
+        # Ubuntu on Windows using the Linux subsystem
+        alias open='explorer.exe';
     else
-        subl "$@";
-    fi;
-}
-
-# `v` with no arguments opens the current directory in Vim, otherwise opens the
-# given location
-function v() {
-    if [ $# -eq 0 ]; then
-        vim .;
-    else
-        vim "$@";
-    fi;
-}
+        alias open='xdg-open';
+    fi
+fi
 
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
