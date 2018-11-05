@@ -93,6 +93,7 @@ brew cask install bartender
 brew cask install cyberduck
 brew cask install licecap
 brew cask install mou
+brew cask install pgadmin4
 brew cask install phpstorm
 brew cask install selfcontrol
 brew cask install sequel-pro
