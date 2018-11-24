@@ -75,7 +75,6 @@ brew install heroku-toolbelt
 brew install git-extras
 brew install nvm
 brew install s3cmd
-brew install yarn
 
 # Install other useful binaries.
 brew install ack
