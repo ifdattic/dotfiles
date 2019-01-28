@@ -69,9 +69,10 @@ brew install homebrew/php/composer
 postUpdatePHP
 
 # Install development tools
-brew install awscli
+# brew install angular-cli # needs node
 brew install ansible
-brew install heroku-toolbelt
+brew install awscli
+# brew install heroku-toolbelt # needs node
 brew install git-extras
 brew install nvm
 brew install s3cmd
