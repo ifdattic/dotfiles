@@ -72,7 +72,6 @@ brew cask install licecap
 brew cask install mou
 brew cask install phpstorm
 brew cask install sequel-pro
-brew cask install tunnelbear
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
