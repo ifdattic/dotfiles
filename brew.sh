@@ -71,7 +71,6 @@ brew cask install cyberduck
 brew cask install licecap
 brew cask install mou
 brew cask install phpstorm
-brew cask install selfcontrol
 brew cask install sequel-pro
 brew cask install tunnelbear
 brew cask install vagrant
