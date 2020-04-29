@@ -35,3 +35,6 @@ export GPG_TTY=$(tty);
 
 # NVM directory to avoid upgrade/reinstall issues
 export NVM_DIR="$HOME/.nvm"
+
+# Hide the “default interactive shell is now zsh” warning on macOS.
+export BASH_SILENCE_DEPRECATION_WARNING=1;
