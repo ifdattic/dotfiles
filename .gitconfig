@@ -59,6 +59,10 @@
     # Find commits by source code
     fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 
+    # Remove branches that have already been merged with main
+    # a.k.a. ‘delete merged’
+    dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
     # Find commits by commit message
     fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
@@ -130,8 +134,8 @@
     # Stash ignored, untracked, and tracked files
     staaash = stash save --all
 
-	# Show the user email for the current repository.
-	whoami = config user.email
+    # Show the user email for the current repository.
+    whoami = config user.email
 
 [apply]
 
