@@ -178,3 +178,11 @@ function cryptde() {
 
     openssl des3 -d -salt -in "$FILENAME_ENCRYPTED" -out "$FILENAME" && rm "$FILENAME_ENCRYPTED"
 }
+
+# Sleep after minutes
+# https://en.wikipedia.org/wiki/Pmset
+function sleepafterminutes() {
+    SLEEP_AT="$(date -d "$1 mins" "+%D %T")"
+    echo $SLEEP_AT
+    sudo pmset schedule sleep "$SLEEP_AT"
+}
