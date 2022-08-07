@@ -138,9 +138,10 @@ function zipgitchanges() {
             return;
         fi;
 
-        backupLocation="/Users/ifdattic/Google Drive/gitbackups";
+        # backupLocation="/Users/ifdattic/Library/CloudStorage/GoogleDrive-EMAIL/My Drive/gitbackups";
+        backupLocation="/Users/ifdattic/Google Drive/My Drive/gitbackups"
 
-        mv $filename "$backupLocation";
+        mv "$filename" "$backupLocation";
 
         printf "\n\nGit changes backed up to $green$backupLocation$reset as $green$filename\n";
     fi;
