@@ -30,6 +30,7 @@ done;
 trap 'delayed ; trap USR1' USR1
 { sleep 0.1 ; builtin kill -USR1 $$ ; } & disown
 
+# This seems to get delayed quite a bit, so might press control+C to send signal
 function delayed {
     # Add tab completion for many Bash commands
     if which brew &> /dev/null && [ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]; then
@@ -44,6 +45,10 @@ function delayed {
     if type _git &> /dev/null; then
         complete -o default -o nospace -F _git g;
     fi;
+    # Above one seems to not be working anymore, alternative copy to ~/.git-completion.bash
+    # from place like /opt/homebrew/Cellar/git/2.34.1/etc/bash_completion.d
+    source ~/.git-completion.bash
+    __git_complete g __git_main
 
     # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
     [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
@@ -61,5 +66,6 @@ function delayed {
     # Add autojump (j)
     [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-    . "/usr/local/opt/nvm/nvm.sh"
+    # Not used anymore
+    # . "/usr/local/opt/nvm/nvm.sh"
 }
