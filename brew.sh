@@ -52,6 +52,7 @@ brew install awscli
 # brew install heroku-toolbelt # needs node
 brew install git-extras
 brew install nvm
+brew install openjdk@17
 brew install s3cmd
 
 # Install other useful binaries.
